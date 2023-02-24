@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Lightred-color: hsla(0, 100%, 67%) ;
+    --Orangeyyellow-color: hsl(39, 100%, 56%);
+    --Greenteal-color: hsl(166, 100%, 37%);
+    --Cobaltblue-color: hsl(234, 85%, 45%);
+
+    --Lightslateblue-color: hsl(252, 100%, 67%);
+    --Lightroyalblue-color: hsl(241, 81%, 54%);
+
+    --Violetblue-color: hsla(256, 72%, 46%, 1);
+    --Persianblue-color: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    --body-font-size: 1.125rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Hanken Grotesk';
+  
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .card{
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    height: 515px;
+    max-width: 740px;
+    -webkit-box-shadow: 13px 26px 74px -21px rgba(0,0,0,0.25);
+    -moz-box-shadow: 13px 26px 74px -21px rgba(0,0,0,0.25);
+    box-shadow: 13px 26px 74px -21px rgba(0,0,0,0.25);
+  }
+  .result{
+    width: 100%;
+   
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(46,43,224);
+  background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%,  hsl(252, 100%, 67%) 100%);
+  }
+  .result h1{
+    color: hsl(221, 100%, 96%);
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .bottom-info{
+    transform: translateY(-10%);
+  }
+  .circle-container{
+    padding: 35px;
+  }
+  .circle-bg{
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    background: rgb(46,43,224);
+    background: linear-gradient(0deg, hsl(241, 81%, 54%, .1) 0%, hsl(0, 0%, 0%, .2) 100%);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+  }
+  .circle-bg h2{
+    font-size: 4rem;
+  }
+  .circle-bg span{
+    opacity: .5;
+  }
+  .great{
+    font-size: 1.5rem !important ;
+    padding: 10px;
+
+  }
+  .pg{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    opacity: .7;
+    padding: 0 45px;
+  }
+  .summary{
+    padding: 30px 35px;
+    width: 100%;
+   }
+
+   .score-wrapper{
+    padding-top: 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+   }
+   .right-title{
+    font-size: 1.2rem;
+    color: var(--Darkgrayblue);
+   }
+   .scores{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    padding: 12px 10px;
+    background: hsla(0, 100%, 67%, .05);
+    border-radius: 12px;
+    
+   }
+   .bold-no{
+    font-weight: 800;
+    margin-right: 5px;
+   }
+ 
+   .assets{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+   }
+   .assets h1{
+    font-size: 1rem;
+    color: hsla(0, 100%, 67%);
+   }
+   button{
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    padding: 20px 10px;
+   }
+
+   button:active{
+    background: rgb(46,43,224);
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%,  hsl(252, 100%, 67%) 100%);
+
+   }
+
+   @media (max-width: 630px){
+    .card{
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat (2,1fr);
+      min-height: 100vh;
+      border-radius: 0;
+     
+      
+    }
+    .result{
+      padding: 27px;
+      border-top-right-radius: 0px;
+      border-top-left-radius:0px ;
+      border-bottom-right-radius:30px ;
+      border-bottom-left-radius:30px ;
+
+    }
+    .circle-bg h2 {
+      font-size: 3rem;
+  }
+    .result h1 {
+      
+      font-size: 1rem;
+     
+  }
+  .great h1{
+    font-size: 1.1rem !important;
+    color: blue !important;
+  }
+
+  .right-title{
+    padding: 5px 0px;
+  }
+  .score-wrapper{
+    padding-top: 10px;
+  }
+  .pg{
+    padding: 0 30px;
+  }
+    .circle-container{
+      padding: 25px;
+    }
+    .circle-bg{
+      color: white;
+      align-items: center;
+      height: 140px;
+      width: 140px;
+      
+    }
+    button{
+    margin-top: 10px;
+   }
+   }
