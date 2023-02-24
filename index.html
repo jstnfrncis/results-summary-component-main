@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+
+    <main>
+      <div class="container">
+
+        <div class="card">
+          <div class="result">
+            <h1 class="left-title" style="opacity:.7;">Your Result</h1>
+            <div class="circle-container">
+              <div class="circle-bg">
+                <h2>76</h2>
+                <span>of 100</span>
+                </div>
+            </div>
+              <div class="bottom-info">
+                <h1 class="great">Great</h1>
+                <p class="pg">You scored higher than 65% of the people who have taken these tests.</p>
+              </div>
+          </div>
+
+
+          <div class="summary">
+            <h1 class="right-title">Summary</h1>
+
+            <div class="score-wrapper">
+
+              <label for="" class="scores">
+                  <div class="assets">
+                      <img src="./assets/images/icon-reaction.svg" alt="reaction svg">
+                      <h1 class="react-title">Reaction</h1>
+                  </div>
+                    <p class="bold-no">80 <span style="opacity: .3;">/ 100</span></p>
+              </label>
+
+              <label for="" class="scores" style="background: hsl(39, 100%, 56%, .05)">
+                    <div class="assets" >
+                      <img src="./assets/images/icon-memory.svg" alt="memory svg">
+                      <h1 class="memory-title" style="color: hsl(39, 100%, 56%)">Memory</h1>
+                    </div>
+                    <p class="bold-no">92 <span style="opacity: .3;">/ 100</span></p>
+               </label>
+
+               <label for="" class="scores" style="background: hsl(166, 100%, 37%, .05);">
+                <div class="assets" >
+                  <img src="./assets/images/icon-verbal.svg" alt="verbal svg">
+                  <h1 style="color: hsl(166, 100%, 37%)">Verbal</h1>
+                </div>
+                <p class="bold-no">61 <span style="opacity: .3;">/ 100</span></p>
+               </label>
+
+               <label for="" class="scores" style="background: hsl(234, 85%, 45%, .05);">
+                <div class="assets" >
+                  <img src="./assets/images/icon-visual.svg" alt="visual svg">
+                  <h1 style="color: hsl(234, 85%, 45%)">Visual</h1>
+                </div>
+                <p class="bold-no">72 <span style="opacity: .3;">/ 100</span></p>
+               </label>
+              
+               <button>Continue</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sebin</a>.
+  </div>
+</body>
+</html>
